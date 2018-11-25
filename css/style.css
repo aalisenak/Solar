@@ -74,7 +74,7 @@ body {
 .btn:hover {
     background: #29a66f;
 }
-.hero__title {
+.hero-title {
     text-align: center;
     font-size: 54px;
     max-width: 900px;
