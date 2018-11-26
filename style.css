@@ -52,7 +52,6 @@ body {
 .menu {
     display: flex;
     align-items: center;
-
 }
 
 .menu-list {
@@ -96,7 +95,7 @@ body {
     background-color: #07b569;
     text-decoration: none;
     padding: 8px 30px;
-    display: block;
+    display: inline-block;
 }
 
 .button:hover {
@@ -126,21 +125,64 @@ body {
 .text-bold {
     font-weight: 700;
 }
+
 /* ---------- END HERO ---------- */
-
-
 
 /* ---------- START ABOUT-US ---------- */
 
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.about-us__img {
+    position: relative;
+    flex-basis: 42%;
+}
+
+.about-us__img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(0, 80, 101, 0.39), rgba(34, 185, 119, 0.39));
+    height: 100%;
+    width: 100%;
+}
+.about-us__img img {
+    display: block;
+    max-width: 100%;
+}
+
+.about-us__content {
+    flex-basis: 45%;
+}
+
+.title {
+    margin: 0;
+    color: #1b1b1b;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.about-us__text {
+    color: #1b1b1b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
 /* ---------- END ABOUT-US ---------- */
 
-
-
 /* ---------- START SERVICES ---------- */
 
 /* ---------- START SERVICES ---------- */
-
-
 
 /* ---------- START Our Project ---------- */
 
