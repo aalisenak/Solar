@@ -1,0 +1,147 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 100%;
+    min-width: 320px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* ---------- START HERO ---------- */
+.hero {
+    background: url("/img/header-bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(0, 80, 101, 0.39), rgba(34, 185, 119, 0.39));
+    height: 100%;
+    width: 100%;
+}
+
+.hero__navbar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-list {
+    display: flex;
+    margin: 0 60px;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-list__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+}
+
+.menu-list__link:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    display: block;
+}
+
+.button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    background-color: #07b569;
+    text-decoration: none;
+    padding: 8px 30px;
+    display: block;
+}
+
+.button:hover {
+    background: #009f5a;
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    max-width: 970px;
+    transform: translate(-50%, -50%);
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.hero__title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+/* ---------- END HERO ---------- */
+
+
+
+/* ---------- START ABOUT-US ---------- */
+
+/* ---------- END ABOUT-US ---------- */
+
+
+
+/* ---------- START SERVICES ---------- */
+
+/* ---------- START SERVICES ---------- */
+
+
+
+/* ---------- START Our Project ---------- */
+
+/* ---------- START Our Project ---------- */
