@@ -2,38 +2,43 @@ body {
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 1.2;
     font-weight: 400;
     color: #ffffff;
+    width: 100%;
+    min-width: 320px;
 }
 
 .container {
-    width: 100%;
-    max-width: 1140px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    box-sizing: border-box;
 }
 
 /* ---------- START HERO ---------- */
 .hero {
-    background-image: linear-gradient(to right, rgba(34, 185, 120, 0.4) 0%, rgba(0, 80, 131, 0.4) 100%), url("/img/header-bg.jpg");
-    background-repeat: no-repeat;
+    background: url("/img/header-bg.jpg") no-repeat center;
     background-size: cover;
-    background-position: center;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    overflow: hidden;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgba(0, 80, 101, 0.39), rgba(34, 185, 119, 0.39));
+    display: block;
+    height: 100%;
+    width: 100%;
+
 }
 
 .header {
-    position: absolute;
-    top: 0;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,37 +53,59 @@ body {
     text-decoration: none;
 }
 
-.navigation {
+.menu {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 60px;
 }
 
-.menu {
-    margin: 0 50px;
-}
 .menu__item {
-    text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
+    text-decoration: none;
     margin: 0 15px;
 }
+
+.menu__item:hover {
+    color: #07b569;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btn {
-    text-decoration: none;
+    padding: 8px 30px;
     color: #ffffff;
     font-size: 16px;
-    background-color: #07b569;
-    padding: 15px 30px;
     font-weight: 700;
+    line-height: 1.875;
+    background-color: #07b569;
+    text-decoration: none;
 }
+
 .btn:hover {
-    background: #29a66f;
+    background: #009f5a;
 }
-.hero-title {
+
+.hero__tittle {
+    margin: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 54px;
-    max-width: 900px;
     font-weight: 400;
+    width: 100%;
+    max-width: 970px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .text-bold {
