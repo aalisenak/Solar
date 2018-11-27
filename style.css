@@ -19,7 +19,7 @@ body {
 
 /* ---------- START HERO ---------- */
 .hero {
-    background: url("/img/header-bg.jpg") no-repeat center;
+    background: url("img/header-bg.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -185,25 +185,46 @@ body {
 
 .services {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 60px;
-    padding-bottom: 60px;
-}
-.service__item {
-    flex-basis: 30%;
-    margin: 5px;
+    padding-bottom: 10px;
 }
 
-.service__title {
+.service-item {
+    width: 370px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.services__item {
+    margin-bottom: 50px;
+}
+
+.service-item__icon {
+    height: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.service-item__icon img {
+    max-width: 100%;
+    display: block;
+}
+
+.service-item__title {
     height: 18px;
     color: #1d1d1d;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.9px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 
 }
-.services__text {
+.service-item__text {
     opacity: 0.7;
     color: #1d1d1d;
     font-size: 16px;
