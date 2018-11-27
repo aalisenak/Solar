@@ -141,7 +141,7 @@ body {
 
 .about-us__img {
     position: relative;
-    width: 500px;
+    width: 43%;
 }
 
 .about-us__img:before {
@@ -155,13 +155,14 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .about-us__img img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .about-us__content {
-    width: 550px;
+    width: 47%;
 }
 
 .title {
@@ -171,6 +172,7 @@ body {
     font-weight: 400;
     line-height: 1.2;
 }
+
 .about-us__text {
     color: #1b1b1b;
     font-size: 18px;
@@ -179,6 +181,7 @@ body {
     margin-top: 45px;
     margin-bottom: 30px;
 }
+
 /* ---------- END ABOUT-US ---------- */
 
 /* ---------- START SERVICES ---------- */
@@ -191,7 +194,7 @@ body {
 }
 
 .service-item {
-    width: 370px;
+    width: 33.33%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -210,7 +213,7 @@ body {
 }
 
 .service-item__icon img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -224,6 +227,7 @@ body {
     margin-bottom: 25px;
 
 }
+
 .service-item__text {
     opacity: 0.7;
     color: #1d1d1d;
@@ -233,8 +237,43 @@ body {
     letter-spacing: 0.8px;
 }
 
-/* ---------- START SERVICES ---------- */
+/* ---------- END SERVICES ---------- */
 
-/* ---------- START Our Project ---------- */
+/* ---------- START Portfolio ---------- */
+.portfolio {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.portfolio__title {
+    margin-bottom: 55px;
+}
+.portfolio__slider {
+    margin-bottom: 60px;
+}
+.slider {
+    display: flex;
+}
 
-/* ---------- START Our Project ---------- */
+.slider__item {
+    width: 25%;
+}
+
+.slider__item img {
+    width: 100%;
+    display: block;
+}
+.portfolio__button {
+    display: flex;
+    justify-content: center;
+
+}
+/* ---------- END Portfolio ---------- */
+
+
+/* ---------- START Review ---------- */
+
+.review {
+    background-image: linear-gradient(to right, #005083 0%, #22b977 100%);
+}
+
+/* ---------- END Review ---------- */
