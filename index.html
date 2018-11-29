@@ -7,26 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!------------ START HERO ------------>
 <section class="hero">
     <header class="hero__navbar navbar container">
         <div class="navbar__logo">
-            <a href="#" class="logo">Solar</a>
+            <a href="#!" class="logo">Solar</a>
         </div>
         <nav class="navbar__menu menu">
             <ul class="menu-list">
-                <li class="menu-list__item"><a href="#" class="menu-list__link">Home</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link">About us</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link">Services</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link">Portfolio</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link">Review</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link">Contact</a></li>
+                <li class="menu-list__item"><a href="#!" class="menu-list__link">Home</a></li>
+                <li class="menu-list__item"><a href="#!" class="menu-list__link">About us</a></li>
+                <li class="menu-list__item"><a href="#!" class="menu-list__link">Services</a></li>
+                <li class="menu-list__item"><a href="#!" class="menu-list__link">Portfolio</a></li>
+                <li class="menu-list__item"><a href="#!" class="menu-list__link">Review</a></li>
+                <li class="menu-list__item"><a href="#!" class="menu-list__link">Contact</a></li>
             </ul>
             <div class="navbar__button">
-                <a href="#" class="button">Contact us</a>
+                <a href="#!" class="button">Contact us</a>
             </div>
         </nav>
     </header>
@@ -56,7 +58,7 @@
             nulla
         </p>
         <div class="about-us__button">
-            <a href="#" class="button">Download Broshure</a>
+            <a href="#!" class="button">Download Broshure</a>
         </div>
 
     </div>
@@ -160,7 +162,7 @@
         </div>
     </div>
     <div class="portfolio__button">
-        <a href="#" class="button">
+        <a href="#!" class="button">
             Load More
         </a>
     </div>
@@ -170,23 +172,66 @@
 
 <!------------ START Review ------------>
 
-<section class="review">
-    <div class="review__content">
-        <div class="review__text">
+<section class="review owl-carousel owl-theme">
+    <div class="review__content ">
+        <div class="review__quote">
+            <img src="img/team/quote.png" alt="">
+        </div>
+        <p class="review__text">
             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
             sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
             odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
             tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+        </p>
+        <div class="review__author author">
+            <p class="author__name">Jane Galadriel</p>
+            <p class="author__post">Ceo Tengkurep</p>
         </div>
-        <div class="review__author">
-
+        <div class="review__photo">
+            <img src="img/team/review-photo2.png" alt="">
         </div>
     </div>
-
-
+    <div class="review__content">
+        <div class="review__quote">
+            <img src="img/team/quote.png" alt="">
+        </div>
+        <p class="review__text">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+            sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+            odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+            tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+        </p>
+        <div class="review__author author">
+            <p class="author__name">WORK</p>
+            <p class="author__post">Ceo Tengkurep</p>
+        </div>
+        <div class="review__photo">
+            <img src="img/team/review-photo2.png" alt="">
+        </div>
+    </div>
+    <div class="review__content">
+        <div class="review__quote">
+            <img src="img/team/quote.png" alt="">
+        </div>
+        <p class="review__text">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+            sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+            odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+            tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+        </p>
+        <div class="review__author author">
+            <p class="author__name">HELLO</p>
+            <p class="author__post">Ceo Tengkurep</p>
+        </div>
+        <div class="review__photo">
+            <img src="img/team/review-photo2.png" alt="">
+        </div>
+    </div>
 </section>
 
 <!------------ END Review ------------>
-
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ body {
 
 /* ---------- START HERO ---------- */
 .hero {
-    background: url("img/header-bg.jpg") no-repeat center;
+    background: url("../img/header-bg.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -271,9 +271,42 @@ body {
 
 
 /* ---------- START Review ---------- */
-
 .review {
     background-image: linear-gradient(to right, #005083 0%, #22b977 100%);
+    display: block;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.review__content {
+    max-width: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.review__quote img {
+    width: 30px;
+    height: 27px;
+}
+.review__photo {
+    width: 50px;
 }
 
+.review__text {
+    opacity: 0.85;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.owl-prev span,
+.owl-next span {
+    font-size: 50px;
+    color: #9f9f9f;
+}
 /* ---------- END Review ---------- */
