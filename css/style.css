@@ -47,6 +47,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -59,6 +60,7 @@ body {
     margin: 0 60px;
     padding: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .menu-list__item:not(:last-child) {
@@ -141,7 +143,7 @@ body {
 
 .about-us__img {
     position: relative;
-    width: 43%;
+    max-width: 43%;
 }
 
 .about-us__img:before {
@@ -241,24 +243,24 @@ body {
 
 /* ---------- START Portfolio ---------- */
 .portfolio {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 120px;
 }
 .portfolio__title {
     margin-bottom: 55px;
 }
-.portfolio__slider {
+.portfolio__gallery {
     margin-bottom: 60px;
 }
-.slider {
+.gallery {
     display: flex;
 }
 
-.slider__item {
+.gallery__item {
     width: 25%;
 }
 
-.slider__item img {
+.gallery__item img {
     width: 100%;
     display: block;
 }
@@ -304,9 +306,80 @@ body {
     font-weight: 400;
     line-height: 30px;
 }
-.owl-prev span,
-.owl-next span {
-    font-size: 50px;
-    color: #9f9f9f;
-}
 /* ---------- END Review ---------- */
+/* ---------- START Contact ---------- */
+
+.contacts {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.contacts__title {
+    text-align: center;
+}
+
+.contacts__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 970px;
+    margin: 75px auto 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+}
+
+.address {
+    width: 440px;
+}
+.address__title {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.address__city-code,
+.address__city,
+.address__zip-code {
+    opacity: 0.7;
+    color: #000000;
+    font-size: 14px;
+}
+.address__map {
+    max-width: 450px;
+}
+.address__map iframe {
+    display: block;
+    width: 100%;
+}
+.contacts__form {
+   width: 465px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form p {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.form p:first-child {
+    margin-top: 0;
+}
+.form input,
+.form textarea {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    opacity: 0.5;
+    color: #413d4b;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+.form__block {
+    display: none;
+}
+
+.contacts__button {
+    display: flex;
+    justify-content: center;
+}
+/* ---------- END Contact ---------- */
