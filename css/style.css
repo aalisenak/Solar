@@ -102,20 +102,17 @@ body {
     transition: 0.6s ease;
 }
 
-.hero__content {
+.hero__title {
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
     width: 100%;
-    max-width: 970px;
+    max-width: 900px;
     transform: translate(-50%, -50%);
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
-}
-
-.hero__title {
     margin: 0;
     color: #ffffff;
     font-size: 54px;
