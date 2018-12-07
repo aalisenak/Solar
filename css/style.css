@@ -249,6 +249,7 @@ body {
 }
 .gallery {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery__item {
