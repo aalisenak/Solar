@@ -1,9 +1,9 @@
 'use strict';
-
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    nav:true,
-    items: 1,
-    dots: false
+$(document).ready(function() {
+    $('.slider').owlCarousel({
+        items: 1,
+        nav: false,
+        dots: true,
+        loop: true
+    })
 });

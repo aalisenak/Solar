@@ -17,6 +17,18 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* ---------- START HERO ---------- */
 .hero {
@@ -270,38 +282,61 @@ body {
 
 /* ---------- START Review ---------- */
 .review {
-    background-image: linear-gradient(to right, #005083 0%, #22b977 100%);
-    display: block;
-    margin: 0 auto;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    background: linear-gradient(to right, #005083 0%, #22b977 100%);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-.review__content {
+.review__item {
     max-width: 770px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
 }
-.review__quote img {
+.review__img {
     width: 30px;
     height: 27px;
-}
-.review__photo {
-    width: 50px;
+    margin: 0 auto;
 }
 
 .review__text {
     opacity: 0.85;
-    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.875;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+.review__name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 0;
+}
+
+.review__post {
+    opacity: 0.7;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.review__photo {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 /* ---------- END Review ---------- */
 /* ---------- START Contact ---------- */
 
