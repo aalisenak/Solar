@@ -46,8 +46,6 @@ body {
     bottom: 0;
     right: 0;
     background-image: linear-gradient(to left, rgba(0, 80, 101, 0.39), rgba(34, 185, 119, 0.39));
-    height: 100%;
-    width: 100%;
 }
 
 .logo {
@@ -414,3 +412,44 @@ body {
     justify-content: center;
 }
 /* ---------- END Contact ---------- */
+
+/* ---------- START FOOTER ---------- */
+
+footer {
+    background: url('/img/footer-bg.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+footer::before {
+    content: "";
+    background-image: linear-gradient(to right, #005083 0%, #005083 100%);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__item {
+    width: 33.33%;
+}
+
+
+
+
+
+
+
+
+/* ---------- END FOOTER ---------- */
