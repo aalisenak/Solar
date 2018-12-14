@@ -4,9 +4,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-    width: 100%;
     min-width: 320px;
-    padding: 0;
     margin: 0;
 }
 
@@ -56,7 +54,7 @@ body {
     text-decoration: none;
 }
 
-.navbar {
+.nav {
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
@@ -66,21 +64,12 @@ body {
     flex-wrap: wrap;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-}
 
 .menu-list {
     display: flex;
-    margin: 0 60px;
-    padding: 0;
-    list-style: none;
     flex-wrap: wrap;
-}
-
-.menu-list__item:not(:last-child) {
-    margin-right: 30px;
+    align-items: center;
+    margin-left: auto;
 }
 
 .menu-list__link {
@@ -90,12 +79,17 @@ body {
     font-weight: 700;
     line-height: 1.875;
 }
-
-.menu-list__link:hover {
-    padding-bottom: 5px;
-    border-bottom: 2px solid #ffffff;
+.menu-list__link:not(:last-child) {
+    margin-right: 30px;
 }
 
+.menu-list__link:hover {
+    color: #07b569;
+    transition: color .2s ease-in;
+}
+.nav__button {
+    margin-left: 60px;
+}
 .button {
     color: #ffffff;
     font-size: 16px;
@@ -132,7 +126,6 @@ body {
 .text-bold {
     font-weight: 700;
 }
-
 /* ---------- END HERO ---------- */
 
 /* ---------- START ABOUT-US ---------- */
