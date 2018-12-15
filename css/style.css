@@ -257,14 +257,11 @@ body {
 }
 
 .portfolio__title {
-    margin-bottom: 55px;
-}
-
-.portfolio__gallery {
     margin-bottom: 60px;
 }
 
 .gallery {
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -281,9 +278,7 @@ body {
 .portfolio__button {
     display: flex;
     justify-content: center;
-
 }
-
 /* ---------- END Portfolio ---------- */
 
 /* ---------- START Review ---------- */
