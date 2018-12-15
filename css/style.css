@@ -165,9 +165,11 @@ body {
     display: block;
     width: 100%;
 }
+
 .about-us__description {
     width: 45%;
 }
+
 .title {
     color: #1b1b1b;
     font-size: 36px;
@@ -190,53 +192,60 @@ body {
 /* ---------- START SERVICES ---------- */
 
 .services {
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 60px;
-    padding-bottom: 10px;
-    justify-content: space-around;
+    padding-bottom: 60px;
 }
 
-.service-item {
-    text-align: center;
+.services__content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: -80px;
+}
+
+.service__item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-basis: 360px;
+    text-align: center;
+    max-width: 350px;
+
 }
 
-.services__item {
-    margin-bottom: 50px;
+.service__item {
+    margin-bottom: 80px;
 }
 
-.service-item__icon {
-    height: 57px;
-    display: flex;
-    align-items: center;
+.service__icon {
+    width: 60px;
+    height: 60px;
 }
 
-.service-item__icon img {
+.service__icon img {
     width: 100%;
     display: block;
 }
 
-.service-item__title {
+.service__title {
     height: 18px;
     color: #1d1d1d;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.9px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
-.service-item__text {
+.service__text {
     opacity: 0.7;
     color: #1d1d1d;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.875;
     letter-spacing: 0.8px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ---------- END SERVICES ---------- */
