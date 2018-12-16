@@ -279,6 +279,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 /* ---------- END Portfolio ---------- */
 
 /* ---------- START Review ---------- */
@@ -292,8 +293,6 @@ body {
     max-width: 770px;
     margin: 0 auto;
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .review__img {
@@ -330,13 +329,47 @@ body {
     margin-bottom: 20px;
 }
 
-.review__photo {
-    width: 70px;
-    height: 70px;
+.thumbnail {
+    max-width: 150px;
     margin: 0 auto;
 }
 
+.review__photo {
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review__photo img {
+    width: 100%;
+    display: block;
+}
+
+.thumbnail.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+.thumbnail.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+.thumbnail.owl-carousel .owl-nav .owl-prev,
+.thumbnail.owl-carousel .owl-nav .owl-next {
+    outline: none;
+    background: none;
+}
+
 /* ---------- END Review ---------- */
+
 /* ---------- START Contact ---------- */
 
 .contacts {
